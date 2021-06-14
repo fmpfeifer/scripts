@@ -30,8 +30,8 @@ def copy_file(source, destdir, destfile, fsize, hash=None, desthash=None):
         if os.path.getsize(destfile) == fsize:
             if hash is not None:
                 if desthash == hash:
-                    print(
-                        f"Skipping, {destfile} exist and has same hash as original...")
+                    print(f"Skipping, {destfile} exist and "
+                          "has same hash as original...")
                     return
                 else:
                     print(f"Deleting {destfile}. Hash mismatch...")
@@ -90,8 +90,8 @@ def copy_tree(source_folder, dest_root):
                             hash_dict[key] = [dest_file, 1]
                         else:
                             if os.path.isfile(dest_file):
-                                print(
-                                    f"Do not create hardlink, {dest_file} exists")
+                                print("Do not create hardlink, "
+                                      f"{dest_file} exists")
                             else:
                                 print(f"Creating hardlink for "
                                       f"{dest_file} with {link_source} ...")
