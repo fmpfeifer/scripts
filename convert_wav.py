@@ -45,7 +45,7 @@ def collect_files_to_convert(source_folder):
 
 def process_dir(dir):
     files_to_convert = collect_files_to_convert(dir)
-    if len(dir) == 0:
+    if len(files_to_convert) == 0:
         print("Não foram enconrados arquivos para converter")
         exit(0)
     print(f"Convertendo {len(files_to_convert)} arquivos...")
