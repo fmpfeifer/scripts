@@ -1,7 +1,7 @@
 # scripts
 
 Scripts para geração de mídia flash com relatórios do cellebrite.
-Os scripts são escritos em python, então é necessário ter o interpretador python instalado. Recomenda-se o python 3.8 ou superior, mas o script deve funcionar com python 3.6 em diante (foi testado apenas em 3.8 e 3.9).
+Os scripts são escritos em python, então é necessário ter o interpretador python instalado. Recomenda-se o python 3.8 ou superior, mas o script deve funcionar com python 3.7 em diante (foi testado apenas em 3.8 e 3.9).
 
 ## converte_wav.py
 
